@@ -5,7 +5,7 @@ __all__ = ['ValueHead', 'GPT2HeadWithValueModel', 'respond_to_batch']
 # Cell
 
 from transformers import GPT2LMHeadModel, GPT2Tokenizer, GPT2Model, GPT2PreTrainedModel
-from transformers.modeling_utils import top_k_top_p_filtering
+from transformers import top_k_top_p_filtering
 from torch import nn
 from torch.nn import Identity
 import torch.nn.functional as F
